@@ -317,7 +317,8 @@ end
 ---function to have less repetition in the following sections.
 ---@param repo string
 ---@return string
-local function gh(repo) return 'https://github.com/' .. repo end
+-- local function gh(repo) return 'https://github.com/' .. repo end
+function gh(repo) return 'https://github.com/' .. repo end
 
 -- ============================================================
 -- SECTION 3: UI / CORE UX PLUGINS
@@ -970,7 +971,7 @@ do
   -- NOTE: You can add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
-  -- require 'custom.plugins'
+  require 'custom.plugins'
 end
 
 -- The line beneath this is called `modeline`. See `:help modeline`
